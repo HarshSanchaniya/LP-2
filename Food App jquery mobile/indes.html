@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Food App</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+        <h2>Welcome to our Food App!</h2>
+        <p>Explore our delicious menu:</p>
+        <ul data-role="listview" data-inset="true">
+          <li><a href="#pizzaPage">Pizza</a></li>
+          <li><a href="#burgerPage">Burger</a></li>
+          <li><a href="#pastaPage">Pasta</a></li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h4>Footer content</h4>
+      </div>
+    </div>
+
+    <!-- Pizza Page -->
+    <div data-role="page" id="pizzaPage">
+      <div data-role="header">
+        <a
+          href="#"
+          data-rel="back"
+          class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back"
+          >Back</a
+        >
+        <h1>Pizza Menu</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+        <p>Check out our delicious pizzas:</p>
+        <ul data-role="listview" data-inset="true">
+          <li>Pizza Margherita</li>
+          <li>Pizza Pepperoni</li>
+          <li>Pizza Hawaiian</li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h4>Footer content</h4>
+      </div>
+    </div>
+
+    <!-- Burger Page -->
+    <div data-role="page" id="burgerPage">
+      <div data-role="header">
+        <a
+          href="#"
+          data-rel="back"
+          class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back"
+          >Back</a
+        >
+        <h1>Burger Menu</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+        <p>Try our mouth-watering burgers:</p>
+        <ul data-role="listview" data-inset="true">
+          <li>Classic Beef Burger</li>
+          <li>Chicken Burger</li>
+          <li>Veggie Burger</li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h4>Footer content</h4>
+      </div>
+    </div>
+
+    <!-- Pasta Page -->
+    <div data-role="page" id="pastaPage">
+      <div data-role="header">
+        <a
+          href="#"
+          data-rel="back"
+          class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back"
+          >Back</a
+        >
+        <h1>Pasta Menu</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+        <p>Indulge in our savory pasta dishes:</p>
+        <ul data-role="listview" data-inset="true">
+          <li>Spaghetti Carbonara</li>
+          <li>Penne Arrabiata</li>
+          <li>Lasagna</li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h4>Footer content</h4>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+Assignment - 2 (b)
+
+cnl06@cnl06:~$ sudo apt update
+
+cnl06@cnl06:~$ sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+cnl06@cnl06:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+OK
+
+cnl06@cnl06:~$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+cnl06@cnl06:~$ sudo apt update
+
+cnl06@cnl06:~$ sudo apt install docker-ce
+
+cnl06@cnl06:~$ sudo docker --version
+Docker version 26.1.0, build 9714adc
+
+
+sudo docker build -t my-node-app .
+
+
+sudo docker run -p 3000:3000 my-node-app
+
+sudo docker images
+
+
+
+app.js code:
+
+const http = require('http');
+
+const hostname = '0.0.0.0';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello, Docker!\n');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+
+
+Dockerfile code:
+
+
+# Use the official Node.js image as a base
+FROM node:latest
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy package.json and package-lock.json (if available)
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the application
+CMD ["node", "app.js"]
+
+
+package.json code:
+
+{
+    "name": "my-node-app",
+    "version": "1.0.0",
+    "description": "A simple Node.js application running in Docker",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+   
+    }
+  }
+  

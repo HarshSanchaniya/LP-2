@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Welcome to Movie Ticket Booking</h1>
+
+    <div id="movieContainer" class="movie-container">
+      <!-- Movie Cards will be dynamically added here -->
+    </div>
+
+    <!-- Modal for displaying movie information -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="movieTitle"></h2>
+        <p id="movieInfo"></p>
+        <p id="showtimes"></p>
+        <button id="bookTicketBtn">Book Ticket</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

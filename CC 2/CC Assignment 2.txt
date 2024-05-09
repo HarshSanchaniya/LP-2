@@ -1,0 +1,218 @@
+comp69@comp69:~/google-cloud-sdk-307.0.0-linux-x86_64/google-cloud-sdk$ cd
+comp69@comp69:~$ cd google-cloud-sdk-307.0.0-linux-x86_64/
+comp69@comp69:~/google-cloud-sdk-307.0.0-linux-x86_64$ cd google-cloud-sdk/
+comp69@comp69:~/google-cloud-sdk-307.0.0-linux-x86_64/google-cloud-sdk$ ./install.sh
+Welcome to the Google Cloud SDK!
+
+To help improve the quality of this product, we collect anonymized usage data
+and anonymized stacktraces when crashes are encountered; additional information
+is available at <https://cloud.google.com/sdk/usage-statistics>. This data is
+handled in accordance with our privacy policy
+<https://policies.google.com/privacy>. You may choose to opt in this
+collection now (by choosing 'Y' at the below prompt), or at any time in the
+future by running the following command:
+
+    gcloud config set disable_usage_reporting false
+
+Do you want to help improve the Google Cloud SDK (y/N)?  
+
+
+Your current Cloud SDK version is: 307.0.0
+The latest available version is: 475.0.0
+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                     Components                                                     │
+├──────────────────┬──────────────────────────────────────────────────────┬──────────────────────────────┬───────────┤
+│      Status      │                         Name                         │              ID              │    Size   │
+├──────────────────┼──────────────────────────────────────────────────────┼──────────────────────────────┼───────────┤
+│ Update Available │ BigQuery Command Line Tool                           │ bq                           │   1.7 MiB │
+│ Update Available │ Cloud Storage Command Line Tool                      │ gsutil                       │  11.3 MiB │
+│ Update Available │ Google Cloud CLI Core Libraries                      │ core                         │  18.5 MiB │
+│ Not Installed    │ App Engine Go Extensions                             │ app-engine-go                │   4.7 MiB │
+│ Not Installed    │ Appctl                                               │ appctl                       │  21.0 MiB │
+│ Not Installed    │ Artifact Registry Go Module Package Helper           │ package-go-module            │   < 1 MiB │
+│ Not Installed    │ Bundled Python 3.11                                  │ bundled-python3-unix         │  74.9 MiB │
+│ Not Installed    │ Cloud Bigtable Command Line Tool                     │ cbt                          │  17.3 MiB │
+│ Not Installed    │ Cloud Bigtable Emulator                              │ bigtable                     │   7.3 MiB │
+│ Not Installed    │ Cloud Datastore Emulator                             │ cloud-datastore-emulator     │  36.2 MiB │
+│ Not Installed    │ Cloud Firestore Emulator                             │ cloud-firestore-emulator     │  45.1 MiB │
+│ Not Installed    │ Cloud Pub/Sub Emulator                               │ pubsub-emulator              │  63.7 MiB │
+│ Not Installed    │ Cloud Run Proxy                                      │ cloud-run-proxy              │  13.3 MiB │
+│ Not Installed    │ Cloud SQL Proxy v2                                   │ cloud-sql-proxy              │  13.8 MiB │
+│ Not Installed    │ Cloud Spanner Emulator                               │ cloud-spanner-emulator       │  36.5 MiB │
+│ Not Installed    │ Cloud Spanner Migration Tool                         │ harbourbridge                │  20.9 MiB │
+│ Not Installed    │ Google Cloud CRC32C Hash Tool                        │ gcloud-crc32c                │   1.2 MiB │
+│ Not Installed    │ Google Container Registry's Docker credential helper │ docker-credential-gcr        │   1.8 MiB │
+│ Not Installed    │ Kustomize                                            │ kustomize                    │   4.3 MiB │
+│ Not Installed    │ Log Streaming                                        │ log-streaming                │  13.9 MiB │
+│ Not Installed    │ Minikube                                             │ minikube                     │  35.4 MiB │
+│ Not Installed    │ Nomos CLI                                            │ nomos                        │  28.7 MiB │
+│ Not Installed    │ On-Demand Scanning API extraction helper             │ local-extract                │  14.4 MiB │
+│ Not Installed    │ Skaffold                                             │ skaffold                     │  24.1 MiB │
+│ Not Installed    │ Spanner migration tool                               │ spanner-migration-tool       │  23.5 MiB │
+│ Not Installed    │ Terraform Tools                                      │ terraform-tools              │  66.1 MiB │
+│ Not Installed    │ anthos-auth                                          │ anthos-auth                  │  22.0 MiB │
+│ Not Installed    │ config-connector                                     │ config-connector             │  56.7 MiB │
+│ Not Installed    │ enterprise-certificate-proxy                         │ enterprise-certificate-proxy │   8.6 MiB │
+│ Not Installed    │ gcloud Alpha Commands                                │ alpha                        │   < 1 MiB │
+│ Not Installed    │ gcloud Beta Commands                                 │ beta                         │   < 1 MiB │
+│ Not Installed    │ gcloud app Java Extensions                           │ app-engine-java              │ 126.2 MiB │
+│ Not Installed    │ gcloud app Python Extensions                         │ app-engine-python            │   5.0 MiB │
+│ Not Installed    │ gcloud app Python Extensions (Extra Libraries)       │ app-engine-python-extras     │   < 1 MiB │
+│ Not Installed    │ gke-gcloud-auth-plugin                               │ gke-gcloud-auth-plugin       │   7.9 MiB │
+│ Not Installed    │ istioctl                                             │ istioctl                     │  24.0 MiB │
+│ Not Installed    │ kpt                                                  │ kpt                          │  14.4 MiB │
+│ Not Installed    │ kubectl                                              │ kubectl                      │   < 1 MiB │
+│ Not Installed    │ kubectl-oidc                                         │ kubectl-oidc                 │  22.0 MiB │
+│ Not Installed    │ pkg                                                  │ pkg                          │           │
+└──────────────────┴──────────────────────────────────────────────────────┴──────────────────────────────┴───────────┘
+To install or remove components at your current SDK version [307.0.0], run:
+  $ gcloud components install COMPONENT_ID
+  $ gcloud components remove COMPONENT_ID
+
+To update your SDK installation to the latest version [475.0.0], run:
+  $ gcloud components update
+
+
+Modify profile to update your $PATH and enable shell command 
+completion?
+
+Do you want to continue (Y/n)?  
+
+The Google Cloud SDK installer will now prompt you to update an rc 
+file to bring the Google Cloud CLIs into your environment.
+
+Enter a path to an rc file to update, or leave blank to use 
+[/home/comp69/.bashrc]:  
+Backing up [/home/comp69/.bashrc] to [/home/comp69/.bashrc.backup].
+[/home/comp69/.bashrc] has been updated.
+
+==> Start a new shell for the changes to take effect.
+
+
+For more information on how to get started, please visit:
+  https://cloud.google.com/sdk/docs/quickstarts
+
+
+comp69@comp69:~/google-cloud-sdk-307.0.0-linux-x86_64/google-cloud-sdk$ cd
+comp69@comp69:~$ python /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/google-cloud-sdk/dev_appserver.py /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/python: can't open file '/home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/google-cloud-sdk/dev_appserver.py': [Errno 2] No such file or directory
+comp69@comp69:~$ python /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/google-cloud-sdk/bin/dev_appserver.py /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/
+This action requires the installation of components: [app-engine-
+python, cloud-datastore-emulator]
+
+
+Your current Cloud SDK version is: 307.0.0
+Installing components from version: 307.0.0
+
+┌───────────────────────────────────────────────────┐
+│        These components will be installed.        │
+├──────────────────────────────┬─────────┬──────────┤
+│             Name             │ Version │   Size   │
+├──────────────────────────────┼─────────┼──────────┤
+│ Cloud Datastore Emulator     │   2.1.0 │ 18.4 MiB │
+│ gRPC python library          │  1.20.0 │          │
+│ gRPC python library          │  1.20.0 │  2.1 MiB │
+│ gcloud app Python Extensions │  1.9.91 │  6.1 MiB │
+└──────────────────────────────┴─────────┴──────────┘
+
+For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+Do you want to continue (Y/n)?   
+
+╔════════════════════════════════════════════════════════════╗
+╠═ Creating update staging area                             ═╣
+╠════════════════════════════════════════════════════════════╣
+╠═ Installing: Cloud Datastore Emulator                     ═╣
+╠════════════════════════════════════════════════════════════╣
+╠═ Installing: gRPC python library                          ═╣
+╠════════════════════════════════════════════════════════════╣
+╠═ Installing: gRPC python library                          ═╣
+╠════════════════════════════════════════════════════════════╣
+╠═ Installing: gcloud app Python Extensions                 ═╣
+╠════════════════════════════════════════════════════════════╣
+╠═ Creating backup and activating new installation          ═╣
+╚════════════════════════════════════════════════════════════╝
+
+Performing post processing steps...done.                                       
+
+Update done!
+
+Restarting command:
+  $ dev_appserver.py /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/
+
+WARNING  2024-05-08 07:17:39,220 application_configuration.py:193] The "python" runtime specified in "/home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/app.yaml" is not supported - the "python27" runtime will be used instead. A description of the differences between the two can be found here:
+https://developers.google.com/appengine/docs/python/python25/diff27
+INFO     2024-05-08 07:17:39,221 devappserver2.py:289] Skipping SDK update check.
+WARNING  2024-05-08 07:17:39,256 simple_search_stub.py:1198] Could not read search indexes from /tmp/appengine.ae-01-trivial.comp69/search_indexes
+INFO     2024-05-08 07:17:39,257 api_server.py:282] Starting API server at: http://localhost:45179
+INFO     2024-05-08 07:17:39,362 dispatcher.py:267] Starting module "default" running at: http://localhost:8080
+INFO     2024-05-08 07:17:39,362 admin_server.py:150] Starting admin server at: http://localhost:8000
+INFO     2024-05-08 07:17:41,373 instance.py:294] Instance PID: 5794
+INFO     2024-05-08 07:17:56,659 module.py:865] default: "GET / HTTP/1.1" 200 215
+INFO     2024-05-08 07:17:56,678 module.py:865] default: "GET /favicon.ico HTTP/1.1" 200 215
+INFO     2024-05-08 07:18:02,901 module.py:865] default: "GET / HTTP/1.1" 304 -
+INFO     2024-05-08 07:18:02,910 module.py:865] default: "GET /favicon.ico HTTP/1.1" 304 -
+INFO     2024-05-08 07:20:23,679 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:20:23,979 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:20:24,239 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:20:24,533 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:20:24,765 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:21:12,143 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/assets/CSS/styles.css
+INFO     2024-05-08 07:21:14,135 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/assets/CSS/styles.css
+INFO     2024-05-08 07:21:14,318 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/assets/CSS/styles.css
+INFO     2024-05-08 07:21:27,853 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/assets/JS/script.js
+INFO     2024-05-08 07:21:31,926 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/assets/JS/script.js
+INFO     2024-05-08 07:21:32,197 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/assets/JS/script.js
+INFO     2024-05-08 07:21:35,564 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:21:52,415 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:21:52,701 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:22:02,349 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:22:02,637 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:22:02,917 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:22:03,172 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+INFO     2024-05-08 07:22:03,437 module.py:432] [default] Detected file changes:
+  /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/index.html
+^CINFO     2024-05-08 07:22:17,873 shutdown.py:50] Shutting down.
+INFO     2024-05-08 07:22:17,873 stub_util.py:377] Applying all pending transactions and saving the datastore
+INFO     2024-05-08 07:22:17,873 stub_util.py:380] Saving search indexes
+ERROR    2024-05-08 07:22:17,874 shutdown.py:52] Received third interrupt signal. Tecomp69comcomp69@comp69@compcomp69cccomp69@comp69:~$ python /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/google-cloud-sdk/bin/dev_appserver.py /home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/
+WARNING  2024-05-08 07:22:24,540 application_configuration.py:193] The "python" runtime specified in "/home/comp69/google-cloud-sdk-307.0.0-linux-x86_64/app.yaml" is not supported - the "python27" runtime will be used instead. A description of the differences between the two can be found here:
+https://developers.google.com/appengine/docs/python/python25/diff27
+INFO     2024-05-08 07:22:24,541 devappserver2.py:289] Skipping SDK update check.
+WARNING  2024-05-08 07:22:24,574 simple_search_stub.py:1198] Could not read search indexes from /tmp/appengine.ae-01-trivial.comp69/search_indexes
+INFO     2024-05-08 07:22:24,574 api_server.py:282] Starting API server at: http://localhost:32889
+INFO     2024-05-08 07:22:24,666 dispatcher.py:267] Starting module "default" running at: http://localhost:8080
+INFO     2024-05-08 07:22:24,666 admin_server.py:150] Starting admin server at: http://localhost:8000
+INFO     2024-05-08 07:22:26,681 instance.py:294] Instance PID: 6617
+INFO     2024-05-08 07:22:30,056 module.py:865] default: "GET / HTTP/1.1" 200 297
+INFO     2024-05-08 07:22:30,068 module.py:865] default: "GET /assets/CSS/styles.css HTTP/1.1" 200 130
+INFO     2024-05-08 07:22:30,068 module.py:865] default: "GET /assets/JS/script.js HTTP/1.1" 200 296
+INFO     2024-05-08 07:22:30,077 module.py:865] default: "GET /favicon.ico HTTP/1.1" 200 297
+INFO     2024-05-08 07:22:57,715 module.py:865] default: "GET / HTTP/1.1" 304 -
+INFO     2024-05-08 07:22:57,736 module.py:865] default: "GET /assets/JS/script.js HTTP/1.1" 304 -
+INFO     2024-05-08 07:22:57,736 module.py:865] default: "GET /assets/CSS/styles.css HTTP/1.1" 304 -
+INFO     2024-05-08 07:22:57,747 module.py:865] default: "GET /favicon.ico HTTP/1.1" 304 -
+^CINFO     2024-05-08 07:23:22,688 shutdown.py:50] Shutting down.
+INFO     2024-05-08 07:23:22,689 stub_util.py:377] Applying all pending transactions and saving the datastore
+INFO     2024-05-08 07:23:22,689 stub_util.py:380] Saving search indexes
+comp69@comp69:~$ 
+
