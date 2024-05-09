@@ -1,0 +1,44 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background-color: #343a40; /* Change background color to grey */
+  color: #fff;
+  padding-top: 20px;
+  height: 100%; /* Make the sidebar extend to full height */
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul li a {
+  padding: 10px 15px;
+  display: block;
+  color: #fff;
+}
+
+#sidebar ul li a:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+#content {
+  width: 100%;
+  padding: 20px;
+}

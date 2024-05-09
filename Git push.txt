@@ -1,0 +1,33 @@
+
+Sure, I can guide you through the process of creating a repository on GitHub and pushing your code to it using Git commands. Here are the steps:
+
+Initialize a Git repository: Open your terminal (Command Prompt, Git Bash, Terminal, etc.) and navigate to your "WAD Final" folder on your Desktop using the cd command.
+bash
+Copy code
+cd Desktop/WAD\ Final
+Then, initialize a new Git repository in this folder.
+bash
+Copy code
+git init
+Add your files to the repository: Add all the files in your folder to the staging area.
+bash
+Copy code
+git add .
+This command adds all the files in the folder to the staging area. If you want to add specific files, you can replace . with the file names.
+Commit your changes: Commit the files you've added to the staging area.
+bash
+Copy code
+git commit -m "Initial commit"
+Replace "Initial commit" with an appropriate commit message describing the changes you've made.
+Create a new repository on GitHub: Go to GitHub.com, log in to your account, and click on the "+" icon in the top right corner of the page. Then, select "New repository". Follow the instructions to create a new repository. Do not initialize it with a README, as you've already initialized your repository locally.
+Add GitHub repository as remote: After creating the repository on GitHub, you need to add it as a remote to your local repository.
+bash
+Copy code
+git remote add origin <repository_URL>
+Replace <repository_URL> with the URL of your GitHub repository. You can find this URL on your repository's page on GitHub.
+Push your code to GitHub: Finally, push your code to the GitHub repository.
+bash
+Copy code
+git push -u origin master
+This command will push the code from your local master branch to the master branch of the repository on GitHub. If you're using a different branch name, replace master with your branch name.
+That's it! Your code should now be pushed to your GitHub repository. You can verify this by visiting your repository on GitHub.com.

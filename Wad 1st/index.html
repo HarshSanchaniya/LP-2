@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3>Cuisine Corner</h3>
+        </div>
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">Orders</a>
+          </li>
+          <li>
+            <a href="#">Customers</a>
+          </li>
+          <li>
+            <a href="#">Reports</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content -->
+      <div id="content">
+        <div class="container-fluid">
+          <h2>Admin Dashboard</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Total Products</h5>
+                  <p class="card-text">150</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Total Orders</h5>
+                  <p class="card-text">100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Total Customers</h5>
+                  <p class="card-text">50</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Grid for Top Products -->
+          <h2 class="mt-5">Top Products</h2>
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <img src="pasta.jpg" class="img-fluid mb-3" alt="Product 1" />
+            </div>
+            <div class="col-md-3">
+              <img src="cake.jpg" class="img-fluid mb-3" alt="Product 2" />
+            </div>
+            <div class="col-md-3">
+              <img src="food.jpg" class="img-fluid mb-3" alt="Product 3" />
+            </div>
+            <div class="col-md-3">
+              <img
+                src="whitepasta.jpg"
+                class="img-fluid mb-3"
+                alt="Product 4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
