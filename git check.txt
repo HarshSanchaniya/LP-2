@@ -1,0 +1,61 @@
+To demonstrate the use of push, pull, branch, and merge with Git commands, let's go through a step-by-step process:
+
+Initialize a Git repository and commit files locally:
+bash
+Copy code
+cd Desktop/WAD\ Final
+git init
+git add .
+git commit -m "Initial commit"
+Create a repository on GitHub:
+Go to GitHub.com, log in to your account, and create a new repository named "WAD-Final" (or any other name you prefer).
+Link the local repository to the remote repository on GitHub:
+bash
+Copy code
+git remote add origin <repository_URL>
+Replace <repository_URL> with the URL of your GitHub repository.
+Push the local repository to GitHub:
+bash
+Copy code
+git push -u origin master
+Create a new branch for development:
+bash
+Copy code
+git checkout -b development
+Make changes in the development branch:
+Make any changes or additions to your files in the "WAD Final" folder.
+Commit changes to the development branch:
+bash
+Copy code
+git add .
+git commit -m "Made changes in the development branch"
+Push the development branch to GitHub:
+bash
+Copy code
+git push origin development
+Create a new branch for a feature:
+bash
+Copy code
+git checkout -b feature-branch
+Make changes in the feature branch:
+Make any changes or additions to your files in the "WAD Final" folder specific to the new feature.
+Commit changes to the feature branch:
+bash
+Copy code
+git add .
+git commit -m "Implemented feature XYZ"
+Merge the feature branch into the development branch:
+bash
+Copy code
+git checkout development
+git merge feature-branch
+Push the changes in the development branch to GitHub:
+bash
+Copy code
+git push origin development
+Pull changes from GitHub:
+If you're working on multiple machines or collaborating with others, you may need to pull changes made by others from GitHub:
+bash
+Copy code
+git pull origin development
+This sequence of commands demonstrates the typical workflow using push, pull, branch, and merge operations in Git. Adjust the branch names and commit messages as per your project requirements.
